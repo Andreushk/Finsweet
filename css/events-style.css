@@ -1,0 +1,218 @@
+/*Стили для блока с ивентами организации*/
+.events-block-container {
+    padding: 0 7.33% 96px 7.33%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Контейнер, в котором заголовок и линия*/
+.events-block-divider {
+    display: flex;
+}
+
+.events-block-divider p {
+    flex: 0 0 195px;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 140%;
+    color: #1D2130;
+    margin-right: 24px;
+}
+
+.events-block-divider div {
+    flex: 0 1 100%;
+    height: 1px;
+    background-color: #E5E5E5;
+    align-self: center;
+}
+
+/*Контейнер с ивентами*/
+.events-block {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 48px;
+}
+
+.events-block a {
+    width: 49.06%;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.events-block a:hover {
+    scale: 1.04;
+    transition: 0.1s;
+}
+
+.event {
+    display: flex;
+    padding: 32px 7.64% 40px 6.37%;
+    min-height: 119px;
+    background: #BEF3C0;
+    border-radius: 8px;
+}
+
+/*Часть с датой мероприятия*/
+.event div:nth-of-type(1) p:first-of-type {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 58px;
+    color: #1D2130;
+}
+
+.event div:nth-of-type(1) p:last-of-type {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #1D2130;
+}
+
+/*Часть с названием мероприятия*/
+.event div:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3.82%;
+    margin-right: 3.82%;
+}
+
+.event div:nth-of-type(2) p:first-of-type {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #1D2130;
+    margin-top: 8px;  
+}
+
+.event div:nth-of-type(2) p:first-of-type::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 44px;
+    height: 2px;
+    background: #1D2130;
+    margin-left: 23px;
+}
+
+.event div:nth-of-type(2) p:last-of-type {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 42px;
+    color: #1D2130;
+    margin-top: 8px;
+}
+
+/*Иконка кнопки*/
+.event img {
+    margin-left: auto;
+}
+
+@media (max-width: 1210px) {
+    .events-block {
+        flex-direction: column;
+        width: 628px;
+        margin: auto;
+        margin-top: 48px;
+    }
+    .events-block a {
+        width: 100%;
+    }
+    .events-block a:nth-of-type(2) {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .events-block-divider p {
+        flex: 0 0 145px;
+        font-size: 30px;
+        line-height: 130%;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 760px) {
+    .events-block {
+        width: 100%;
+    }
+    .events-block a {
+        width: 100%;
+    }
+}
+
+@media (max-width: 715px) {
+    .events-block-divider p {
+        flex: 0 0 121px;
+        font-size: 25px;
+        line-height: 120%;
+        margin-right: 17px;
+    }
+}
+
+@media (max-width: 650px) {
+    .event {
+        min-height: auto;
+    }
+    .event div:nth-of-type(1) p:first-of-type {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .event div:nth-of-type(1) p:last-of-type {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .event div:nth-of-type(2) p:first-of-type {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .event div:nth-of-type(2) p:first-of-type::after {
+        width: 45px;
+        margin-left: 15px;
+    }
+    .event div:nth-of-type(2) p:last-of-type {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .event img {
+        width: 45px;
+        height: auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .events-block-container {
+        padding: 0 7.33% 75px 7.33%;
+    }
+}
+
+@media (max-width: 390px) {
+    .event div:nth-of-type(1) {
+        align-self: center;
+    }
+    .event div:nth-of-type(1) p:first-of-type {
+        font-size: 35px;
+        line-height: 45px;
+    }
+    .event div:nth-of-type(1) p:last-of-type {
+        font-size: 13px;
+        line-height: 16px;
+    }
+    .event div:nth-of-type(2) p:first-of-type {
+        font-size: 13px;
+        line-height: 16px;
+    }
+    .event div:nth-of-type(2) p:first-of-type::after {
+        width: 30px;
+        margin-left: 10px;
+    }
+    .event div:nth-of-type(2) p:last-of-type {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .event img {
+        width: 40px;
+    }
+}

@@ -1,0 +1,200 @@
+/*Футер*/
+footer {
+    padding: 96px 7.33% 96px 7.33%;
+    background: #0B0706;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Контейнер, в котором расположен логотип и навигационные ссылки по сайту*/
+.footer-nav-container {
+    order: 1;
+    flex: 0 0 46.33%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Контейнер с навигационными ссылками по сайту*/
+.footer-nav {
+    flex: 0 0 61.72%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-nav div {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-nav p {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.footer-nav a {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #FFFFFF;
+    opacity: 0.78;
+    text-decoration: none;
+    margin-top: 24px;
+    transition: 0.2s;
+}
+
+.footer-nav a:hover {
+    opacity: 1;
+    transition: 0.2s;
+}
+
+/*Контейнер, в котором расположена форма подписки на электронную рассылку*/
+.footer-mail {
+    order: 2;
+    flex: 0 0 42.5%;
+}
+
+.footer-mail h2 {
+    font-size: 40px;
+    line-height: 140%;
+    color: #FFFFFF;
+    margin-bottom: 32px;
+}
+
+.footer-mail form {
+    display: flex;
+    width: 100%;
+}
+
+.footer-mail form button {
+    width: 24.26%;
+    height: 60px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #1D2130;
+    background: #fff;
+    border-radius: 0 4px 4px 0;
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.footer-mail form button:hover {
+    color: #fff;
+    background: #0B0706;
+    transition: 0.3s;
+}
+
+.footer-mail form input {
+    width: 69.85%;
+    height: 12px;
+    border: 2px solid rgba(235, 240, 249, 0.3);
+    border-radius: 4px 0 0 4px;
+    background-color: #0B0706;
+    padding: 22px 0 22px 24px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+}
+
+.footer-mail form input::placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(235, 240, 249, 0.3);
+    opacity: 0.8;
+}
+
+@media (max-width: 1150px) {
+    footer {
+        flex-direction: column;
+    }
+    .footer-nav-container {
+        flex: 0 0 100%; 
+        width: 560px;
+        align-self: center;
+    }
+    .footer-mail {
+        margin-top: 50px;
+        flex: 0 0 100%;
+        width: 650px;
+        align-self: center;
+    }
+    .footer-mail h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 750px) {
+    .footer-nav-container {
+        flex-direction: column;
+    }
+    .footer-logo {
+        align-self: center;
+        margin-bottom: 50px;
+    }
+    .footer-logo img {
+        height: 35px;
+    }
+    .footer-nav-container {
+        width: 100%;
+    }
+    .footer-nav {
+        flex: 0 0 100%;
+        width: 366px;
+        align-self: center;
+    }
+    .footer-nav a {
+        margin-top: 20px;
+    }
+    .footer-mail {
+        width: 80%;
+    }
+    .footer-mail h2 {
+        font-size: 30px;
+        line-height: 45px;
+        margin-bottom: 17px;
+    }
+    footer {
+        padding: 80px 7.33% 60px 7.33%;
+    }
+}
+
+@media (max-width: 590px) {
+    .footer-mail form button {
+        width: 40%;
+    }    
+    .footer-mail form input {
+        width: 60%;
+    }
+    .footer-nav {
+        width: 65%;
+    }
+}
+
+@media (max-width: 520px) {
+    .footer-nav {
+        width: 80%;
+    }
+}
+
+@media (max-width: 430px) {
+    .footer-nav {
+        width: 95%;
+    }
+    .footer-mail {
+        width: 100%;
+    }
+}

@@ -1,0 +1,492 @@
+/*Первый блок странички*/
+.what-we-do-block-container {
+   padding: 96px 7.33%;
+   display: flex;
+   justify-content: space-between;
+}
+
+.what-we-do-text {
+    margin-left: 7.5%;
+    width: 42.89%;
+}
+
+.what-we-do-text h1 {
+    margin-top: 32px;
+}
+
+.what-we-do-text p {
+    margin-top: 34px;
+}
+
+.what-we-do-img {
+    width: 37.5%;
+    align-self: center;
+}
+
+.what-we-do-img img {
+    width: 100%;
+    height: auto;
+}
+
+@media all and (max-width: 1070px) {
+    .what-we-do-text h1 {
+        margin-top: 30px;
+        font-size: 53px;
+    }
+    .what-we-do-text p {
+        margin-top: 25px;
+    }
+}
+
+@media all and (max-width: 1050px) {
+    .what-we-do-text {
+        margin-left: 0;
+        width: 45%;
+    }
+    .what-we-do-img {
+        width: 45%;
+    }
+}
+
+@media all and (max-width: 960px) {
+    .what-we-do-text {
+        width: 50%;
+    }
+    .what-we-do-img {
+        width: 40%;
+    }
+}
+
+@media all and (max-width: 860px) {
+    .what-we-do-block-container {
+        flex-direction: column;
+    }
+    .what-we-do-text {
+        width: 100%;
+    }
+    .what-we-do-text h4 {
+        text-align: center;
+    }
+    .what-we-do-text h1 {
+        text-align: center;
+    }
+    .what-we-do-text p {
+        text-align: center;
+    }
+    .what-we-do-img {
+        width: 70%;
+        margin-top: 40px;
+    }
+}
+
+@media all and (max-width: 750px) {
+    .what-we-do-block-container {
+        padding: 60px 7.33%;
+    }
+    .what-we-do-text h1 {
+        margin-top: 20px;
+        font-size: 45px;
+    }
+    .what-we-do-text p {
+        margin-top: 10px;
+        font-size: 15px;
+    }
+}
+
+@media all and (max-width: 550px) {
+    .what-we-do-img {
+        width: 90%;
+    }
+}
+
+@media all and (max-width: 450px) {
+    .what-we-do-text h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+}
+
+@media all and (max-width: 350px) {
+    .what-we-do-text h1 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+    .what-we-do-text p {
+        font-size: 14px;
+    }
+}
+
+/*Второй блок сайта с информацией о том, что делает организация для окружающей среды*/
+.environment-block-container {
+    padding: 96px 7.33%;
+    background: #EFF7F2;
+}
+
+.environment-block-items {
+    margin-top: 64px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 30%);
+    grid-column-gap: 5%; grid-row-gap: 48px;
+    justify-content: center;
+    align-content: center;
+}
+
+.environment-item {
+    display: flex;
+}
+
+.environment-item svg {
+    flex: 0 0 28px;
+    align-self: flex-start;
+    width: 28px;
+    height: 28px;
+}
+
+.environment-item div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 6.25%;
+}
+
+.environment-item div h4 {
+    font-size: 24px;
+    line-height: 28px;
+    color: #1D2130;
+}
+
+.environment-item div .small-p {
+    margin-top: 8px;
+}
+
+@media all and (max-width: 1130px) {
+    .environment-item div h4 {
+        font-size: 22px;
+        line-height: 25px;
+    }
+}
+
+@media all and (max-width: 1050px) {
+    .environment-item div h4 {
+        font-size: 20px;
+    }
+}
+
+@media all and (max-width: 970px) {
+    .environment-block-items {
+        grid-template-columns: repeat(auto-fit, 45%);
+        grid-column-gap: 10%;
+    }
+    .environment-item div h4 {
+        font-size: 24px;
+        line-height: 28px;
+        color: #1D2130;
+    }
+}
+
+@media all and (max-width: 750px) {
+    .environment-block-container {
+        padding: 60px 7.33%;
+    }
+    .environment-block-container h2 {
+        text-align: center;
+    }
+    .environment-block-items {
+        margin-top: 55px;
+        grid-template-columns: repeat(auto-fit, 46%);
+        grid-column-gap: 7%;
+        grid-row-gap: 40px;
+    }
+    .environment-item svg {
+        flex: 0 0 26px;
+        width: 26px;
+        height: 26px;
+    }
+    .environment-item div {
+        margin-left: 5%;
+    }
+    .environment-item div h4 {
+        font-size: 22px;
+        line-height: 26px;
+    }
+    .environment-item div .small-p {
+        margin-top: 6px;
+    }
+}
+
+@media all and (max-width: 670px) {
+    .environment-block-items {
+        margin-top: 50px;
+        grid-template-columns: repeat(auto-fit, 45%);
+        grid-column-gap: 10%;
+        grid-row-gap: 40px;
+    }
+}
+
+@media all and (max-width: 610px) {
+    .environment-block-items {
+        grid-template-columns: repeat(auto-fit, 100%);
+        grid-column-gap: 0;
+    }
+    .environment-item div h4 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+}
+
+/*Третий блок сайта с информацией о проектах организации*/
+.projects-block-container {
+    padding: 96px 7.33%;
+}
+
+.projects-block-container h4 {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #1D2130;
+    text-align: center;
+}
+
+.projects-block-container h2 {
+    width: 700px;
+    text-align: center;
+    margin: auto;
+    margin-top: 16px;
+}
+
+.projects-block {
+    margin-top: 64px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 411px);
+    gap: 23px;
+    justify-content: center;
+}
+
+.projects-item {
+    border-radius: 12px;
+    background-size: calc( 1293 / 411 * 100%);
+}
+
+.projects-item:nth-of-type(1) {
+    background-image: url("../../images/context/background/background-sprite-1.png");
+    background-position: -872px -10px;
+}
+
+.projects-item:nth-of-type(2) {
+    background-image: url("../../images/context/background/background-sprite-1.png");
+    background-position: -441px -10px;
+}
+
+.projects-item:nth-of-type(3) {
+    background-image: url("../../images/context/background/background-sprite-1.png");
+    background-position: -10px -10px;
+}
+
+.overlay {
+    z-index: 1;
+    position: relative;
+    top: 0px; left: 0px;
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+    background: rgba(11, 7, 6, 0.5);
+    display: flex;
+    flex-direction: column;
+}
+
+.overlay h3 {
+    margin: 80px 48px 16px 48px;
+    color: #fff;
+}
+
+.overlay p {
+    margin: 0 48px 64px 48px;
+    color: #fff;
+}
+
+.overlay form {
+    margin-left: 48px;
+    margin-bottom: 48px;
+}
+
+.overlay form button {
+    width: 128px; height: 47px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #1D2130;
+    background: #fff;
+    border-radius: 4px; 
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.overlay form button:hover {
+    color: #fff;
+    background-color: rgba(11, 7, 6, 0.5);;
+    transition: 0.2s;
+}
+
+@media (max-width: 980px) {
+    .projects-block {
+        margin-top: 30px;
+        grid-template-columns: repeat(auto-fit, 360px);
+        gap: 20px;
+    }
+    .projects-item {
+        background-size: calc( 1293 / 360 * 100%);
+    }
+    .projects-item:nth-of-type(2) {
+        background-position: -455px -10px;
+    }
+    .projects-item:nth-of-type(3) {
+        background-position: -30px -10px;
+    }
+    .overlay h3 {
+        margin: 55px 40px 15px 40px;
+    }
+    .overlay p {
+        margin: 0 40px 50px 40px;
+    }
+    .overlay form {
+        margin-left: 40px;
+        margin-bottom: 55px;
+    }
+}
+
+@media (max-width: 870px) {
+    .projects-block-container h2 {
+        width: 100%;
+    }
+    .projects-block {
+        grid-template-columns: repeat(auto-fit, 320px);
+        gap: 15px;
+    }
+    .projects-item {
+        background-size: calc( 1293 / 320 * 100%);
+    }
+    .overlay h3 {
+        font-size: 24px;
+        line-height: 28px;
+        margin: 55px 40px 15px 40px;
+    }
+    .overlay p {
+        font-size: 15px;
+        line-height: 23px;
+        margin: 0 40px 50px 40px;
+    }
+}
+
+@media (max-width: 760px) {
+    .projects-block {
+        grid-template-columns: repeat(auto-fit, 411px);
+        gap: 20px;
+    }
+    .projects-item {
+        background-size: calc( 1293 / 411 * 100%);
+    }
+    .projects-item:nth-of-type(1) {
+        background-position: -872px -10px;
+    }
+    .projects-item:nth-of-type(2) {
+        background-position: -441px -10px;
+    }
+    .projects-item:nth-of-type(3) {
+        background-position: -10px -10px;
+    }
+    .overlay h3 {
+        margin: 80px 48px 16px 48px;
+    }
+    .overlay p {
+        margin: 0 48px 64px 48px;
+    }
+    .overlay form {
+        margin-left: 48px;
+        margin-bottom: 55px;
+    }
+}
+
+@media (max-width: 750px) {
+    .projects-block-container {
+        padding: 60px 7.33%;
+    }
+}
+
+@media (max-width: 500px) {
+    .projects-block {
+        grid-template-columns: repeat(auto-fit, 370px);
+    }
+    .projects-item {
+        background-size: calc( 1293 / 370 * 100%);
+    }
+    .projects-item:nth-of-type(1) {
+        background-position: -872px -10px;
+    }
+    .projects-item:nth-of-type(2) {
+        background-position: -458px -10px;
+    }
+    .projects-item:nth-of-type(3) {
+        background-position: -49px -10px;
+    }
+    .overlay h3 {
+        margin: 80px 30px 16px 30px;
+        text-align: center;
+    }
+    .overlay p {
+        margin: 0 30px 64px 30px;
+        text-align: center;
+    }
+    .overlay form {
+        margin: auto;
+        width: 70%;
+        margin-bottom: 48px;
+    }
+    .overlay form button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 435px) {
+    .projects-block {
+        grid-template-columns: repeat(auto-fit, 320px);
+    }
+    .projects-item {
+        background-size: calc( 1293 / 320 * 100%);
+    }
+    .projects-item:nth-of-type(1) {
+        background-position: -872px -10px;
+    }
+    .projects-item:nth-of-type(2) {
+        background-position: -458px -10px;
+    }
+    .projects-item:nth-of-type(3) {
+        background-position: -49px -10px;
+    }
+    .overlay h3 {
+        margin: 55px 40px 15px 40px;
+    }
+    .overlay p {
+        margin: 0 40px 50px 40px;
+    }
+}
+
+@media (max-width: 385px) {
+    .projects-block {
+        grid-template-columns: repeat(auto-fit, 300px);
+    }
+    .projects-item {
+        background-size: calc( 1293 / 300 * 100%);
+    }
+}
+
+@media (max-width: 350px) {
+    .projects-block {
+        grid-template-columns: repeat(auto-fit, 270px);
+    }
+    .projects-item {
+        background-size: calc( 1293 / 270 * 100%);
+    }
+}

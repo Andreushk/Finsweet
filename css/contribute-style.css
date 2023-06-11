@@ -1,0 +1,395 @@
+/*Блок сайта с возможностью пожертвования или присоединения в качестве волонтёра*/
+.contribute-block-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 85.33%;
+    height: 384px;
+    background: url("../images/context/background/windmills-background.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 12px;
+    margin: auto;
+}
+
+.contribute-block-container h2 {
+    width: 631px;
+    text-align: center;
+    color: #fff; 
+}
+
+.modal-desktop {
+    display: flex;
+    justify-content: space-between;
+    width: 348px;
+    margin-top: 32px;
+}
+
+.modal-desktop button {
+    width: 196px;
+    height: 47px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+    background: #70C174;
+    border-radius: 4px;
+    border: 2px solid #70C174;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.modal-desktop button:hover {
+    color: #70C174;
+    background: rgba(11, 7, 6, 0.3);
+    transition: 0.2s;
+}
+
+.modal-desktop form button {
+    width: 112px;
+    height: 47px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #1D2130;
+    background: #fff;
+    border-radius: 4px;
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.modal-desktop form button:hover {
+    color: #fff;
+    background: rgba(11, 7, 6, 0.3);
+    transition: 0.2s;
+}
+
+/*Этот контейнер выглядит и содержит точно такие же кнопки, как и ".modal-desktop". Их отличие в том, что
+".mobile-link" не вызывает модальное окно, а загружает пользователю, нажавшему на кнопку, отдельную страничку с формой.
+Если ширина экрана пользователя менее 1000px ,то будет отображаться этот контейнер, а если больше - ".modal-desktop"*/
+.mobile-link {
+    display: flex;
+    justify-content: space-between;
+    width: 348px;
+    margin-top: 32px;
+    display: none;
+}
+
+.mobile-link form:nth-of-type(1) button {
+    width: 196px;
+    height: 47px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+    background: #70C174;
+    border-radius: 4px;
+    border: 2px solid #70C174;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.mobile-link form:nth-of-type(1) button:hover {
+    color: #70C174;
+    background: rgba(11, 7, 6, 0.3);
+    transition: 0.2s;
+}
+
+.mobile-link form:nth-of-type(2) button {
+    width: 112px;
+    height: 47px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #1D2130;
+    background: #fff;
+    border-radius: 4px;
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.mobile-link form:nth-of-type(2) button:hover {
+    color: #fff;
+    background: rgba(11, 7, 6, 0.3);
+    transition: 0.2s;
+}
+
+/*Фон модального окна*/
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100vw; /* Full width */
+    height: 100vh; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+  
+/*Само модальное окно*/
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 544px;
+    position: absolute;
+    top:50%; left:50%;
+    transform:translate(-50%, -50%);
+    background: #fff;
+    border-radius: 8px;
+    padding: 48px;
+}
+  
+/*Кнопка закрытия модального окна*/
+.close {
+    position: absolute;
+    top: 34px; right: 34px;
+    fill: #1D2130;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.close:hover {
+    fill: #d11507;
+    transition: 0.1s;
+}
+  
+.modal-content h3 {
+    font-size: 40px;
+    line-height: 56px;
+    color: #1D2130;
+}
+
+.modal-content p {
+    margin-top: 16px;
+}
+
+.modal-content form {
+    margin-top: 32px;
+}
+
+.modal-content form label {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 19px;
+    color: #1D2130;
+    opacity: 0.6;
+}
+
+.first-last-name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.first-last-name div {
+    width: 256px;
+    margin-bottom: 32px;
+}
+
+.first-last-name div input {
+    width: 256px;
+    height: 37px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #E5E5E5;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #525560;
+}
+
+.modal-content form div:nth-of-type(2) input {
+    width: 100%;
+    height: 37px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #E5E5E5;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #525560;
+}
+
+.modal-content form div:nth-of-type(3) {
+    margin-top: 32px;
+}
+
+.modal-content form div:nth-of-type(3) textarea {
+    width: 504px; 
+    height: 156px;
+    resize: none;
+    outline: none;
+    border: 1px solid #E5E5E5;
+    border-radius: 4px;
+    margin-top: 4px;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1D2130;
+}
+
+.modal-content form div:nth-of-type(3) textarea::placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #1D2130;
+    opacity: 0.3;
+}
+
+.modal-content form div:nth-of-type(4) {
+    margin-top: 48px;
+    width: 170px;
+}
+
+.modal-content form div:nth-of-type(4) input {
+    width: 100%;
+    height: 51px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+    background: #70C174;
+    border-radius: 4px;
+    border: 2px solid #70C174;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.modal-content form div:nth-of-type(4) input:hover {
+    color: #70C174;
+    background: #fff;
+    transition: 0.2s;
+}
+
+/*Адаптация модального окна под более маленькие экраны*/
+@media all and (max-width: 1200px) {
+    .modal-content {
+        width: 540px;
+        padding: 35px;
+    }
+    .close {
+        top: 33px; right: 33px;
+    }
+    .modal-content h3 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .modal-content p {
+        margin-top: 15px;
+    }
+    .modal-content form {
+        margin-top: 25px;
+    }
+    .first-last-name div {
+        width: 256px;
+        margin-bottom: 20px;
+    }
+    .first-last-name div input {
+        height: 29px;
+    }
+    .modal-content form div:nth-of-type(2) input {
+        height: 29px;
+    }
+    .modal-content form div:nth-of-type(3) {
+        margin-top: 25px;
+    }
+    .modal-content form div:nth-of-type(3) textarea {
+        width: 504px; 
+        height: 100px;
+    }
+    .modal-content form div:nth-of-type(4) {
+        margin-top: 25px;
+    }
+    .modal-content form div:nth-of-type(4) input {
+        height: 46px;
+    }
+}
+
+/*Если экран в ширину менее 1000px, то div "modal-desktop" с кнопками, которые вызывают модальное окно,
+скрывается, а вместо него отображается другой блок - "mobile-link", кнопки в котором не открывают модальное окно,
+а отправляют пользователя на отдельную страничку*/
+@media all and (max-width: 999px) {
+    .modal-desktop {
+       display: none;
+    }
+    .mobile-link {
+        display: flex;
+    }
+}
+
+@media all and (max-width: 760px) {
+    .contribute-block-container h2 {
+        width: 80%;
+    }
+}
+
+@media all and (max-width: 695px) {
+    .contribute-block-container {
+        background-position: top left -515px;
+    }
+}
+
+@media all and (max-width: 550px) {
+    .mobile-link {
+        flex-direction: column;
+        width: 180px;
+        margin-top: 30px;
+    }
+    .mobile-link form:nth-of-type(1) button {
+        width: 180px;
+        height: 45px;
+    }
+    .mobile-link form:nth-of-type(2) button {
+        width: 180px;
+        height: 45px;
+        margin-top: 10px;
+    }
+}
+
+@media all and (max-width: 505px) {
+    .contribute-block-container {
+        background-position: top left -575px;
+    }
+}
+
+@media all and (max-width: 430px) {
+    .contribute-block-container {
+        background-position: top left -600px;
+    }
+}
+
+@media all and (max-width: 385px) {
+    .contribute-block-container {
+        background-position: top left -620px;
+    }
+    .contribute-block-container h2 {
+        width: 90%;
+    }
+}

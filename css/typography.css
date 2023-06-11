@@ -1,0 +1,140 @@
+/*Стилизация шрифтов*/
+
+
+.home-heading {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 120%; /*77px*/
+    color: #1D2130;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 120%; /*or 67px*/
+    color: #1D2130;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%; /*58px*/
+    color: #1D2130;
+}
+
+@media (max-width: 1260px) {
+    h2 {
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 1180px) {
+    h2 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 970px) {
+    h2 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 600px) {
+    h2 {
+        font-size: 30px;
+    }
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 150%; /*42px*/
+    color: #1D2130; 
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%; /*30px*/
+    color: #1D2130;  
+}
+
+h5 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%; /*21px*/
+    color: #1D2130;  
+}
+
+h6 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 150%; /*18px*/
+    color: #1D2130;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%; /*26px*/
+    color: #525560; 
+}
+
+.small-p {
+    font-size: 14px;
+    line-height: 160%;   
+    color: #525560;
+}
+
+/*Заголовки разделов страницы сайта*/
+.headline {
+    position: relative;
+    left: -96px;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #1D2130;
+}
+
+.headline::before {
+    content: "";
+    content: url("data:image/svg+xml;charset=UTF-8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='10' width='72'><path d='m-0.00745,6.30851l0,-3l72.00744,0l0,3l-72.00744,0z' stroke='null'/></svg>");
+    width: 72px; 
+    height: 22px;
+    display: inline-block;
+    margin-right: 24px;
+}
+
+@media (max-width: 1050px) {
+    .headline {
+        left: 0;
+    }
+    .headline::before {
+        display: none;
+    }
+}
+
+@media (max-width: 970px) {
+    .headline {
+        font-size: 14px;
+        line-height: 17px;
+    }
+}

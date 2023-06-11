@@ -1,0 +1,105 @@
+.error-block {
+    width: 100%;
+    height: 70vh;
+    background-color: #F2F7EF;
+    position: relative;
+}
+
+.error {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top:50%; left:50%;
+    transform:translate(-50%, -50%);
+}
+
+.error div:nth-of-type(1) {
+    width: 325px;
+    align-self: center;
+}
+
+.error div:nth-of-type(1) img {
+    width: 100%;
+    height: auto;
+}
+
+.error div:nth-of-type(2) {
+    width: 440px;
+    align-self: center;
+}
+
+.error div:nth-of-type(2) p:first-of-type {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 45px;
+    color: #1D2130;
+}
+
+.error div:nth-of-type(2) p:last-of-type {
+    margin-top: 10px;
+}
+
+@media (max-width: 1075px) {
+    .error {
+        width: 600px;
+    }
+    .error div:nth-of-type(1) {
+        width: 300px;
+    }
+    .error div:nth-of-type(2) {
+        width: 260px;
+    }
+    .error div:nth-of-type(2) p:first-of-type {
+        font-size: 35px;
+        line-height: 43px;
+    }
+}
+
+@media (max-width: 710px) {
+    .error {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .error div:nth-of-type(1) {
+        width: 220px;
+    }    
+    .error div:nth-of-type(2) {
+        width: 100%;
+    }
+    .error div:nth-of-type(2) p:first-of-type {
+        width: 380px;
+        margin: auto;
+        text-align: center;
+        font-size: 35px;
+        line-height: 42px;
+    }
+    .error div:nth-of-type(2) p:last-of-type {
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 490px) {
+    .error div:nth-of-type(2) p:first-of-type {
+        width: 325px;
+        font-size: 30px;
+        line-height: 37px;
+    }
+}
+
+@media (max-width: 400px) {
+    .error div:nth-of-type(1) {
+        width: 56%;
+    }    
+    .error div:nth-of-type(2) p:first-of-type {
+        width: 271px;
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .error div:nth-of-type(2) p:last-of-type {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!-- Включение сглаживания шрифтов -->
+        <meta http-equiv="cleartype" content="on"/>
+        <!-- Отключение автоматического изменения масштаба страницы на мобильных устройствах -->
+        <meta name="HandheldFriendly" content="True"/>
+        <!-- Отключение автоматического обнаружения номеров телефона, адресов -->
+        <meta name="format-detection" content="telephone=no"/>
+        <meta name="format-detection" content="address=no"/>
+        <meta name="x-rim-auto-match" content="none" forua="true">
+        <!-- Запрет на автоматический перевод страницы -->
+        <meta name="google" value="notranslate">
+        <!-- Реальный viewport на мобильных устройствах -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Название вкладки -->
+        <title>The page is not available</title>
+        <!-- Логотип сайта (на вкладку) -->
+        <link rel="apple-touch-icon" sizes="180x180" href="../../images/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon/favicon-16x16.png">
+        <!-- Шрифты -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <!-- CSS обнуление и CSS файлы со стилями -->
+        <link rel="stylesheet" href="../../css/resetcss.css" type="text/css">
+        <link rel="stylesheet" href="../../css/typography.css" type="text/css">
+        <link rel="stylesheet" href="../../css/header.css" type="text/css">
+        <link rel="stylesheet" href="../../css/pages/error.css" type="text/css">
+        <link rel="stylesheet" href="../../css/footer.css" type="text/css">
+    </head>
+    <body>
+        <!-- Контейнер, который ограничивает ширину сайта -->
+        <div class="wrapper">
+            <!-- Контейнер, в котором находится навигационная панель -->
+            <header>
+                <!-- Контейнер, внутри которого кнопка бургер-меню -->
+                <div class="hamb">
+                    <div class="hamb__field" id="hamb">
+                        <span class="bar"></span> 
+                        <span class="bar"></span> 
+                        <span class="bar"></span>
+                    </div>
+                </div>
+                <!-- Контейнер с логотипом -->
+                <div class="logo-nav">
+                    <a href="../../index.html"><img src="../../images/special/logo.svg" alt="logo of our organization"></a>
+                </div>
+                <!-- Контейнер с навигационными ссылками -->
+                <div class="links-nav">
+                    <a href="../../index.html">Home</a>
+                    <a href="about-us.html">About us</a>
+                    <a href="what-we-do.html">What We Do</a>
+                    <a href="media.html">Media</a>
+                    <a href="contact-us.html">Contact</a>
+                </div>
+                <!-- Кнопка пожертвования -->
+                <form action="#">
+                    <button>Donate</button>
+                </form>
+            </header>
+            <!-- Содержимое бургер-меню -->
+            <div class="popup" id="popup">
+                <!-- Контейнер, в котором расположены ссылки и кнопки в бургер-меню -->
+                <div class="popup-items" id="menu">
+                    <a href="../../index.html">Home</a>
+                    <a href="about-us.html">About us</a>
+                    <a href="what-we-do.html">What We Do</a>
+                    <a href="media.html">Media</a>
+                    <a href="contact-us.html">Contact</a>
+                    <form action="#">
+                        <button>Donate</button>
+                    </form>
+                </div>
+            </div>
+            <div class="error-block">
+                <div class="error">
+                    <div>
+                        <img src="../../images/icons/error.svg">
+                    </div>
+                    <div>
+                        <p>This page is not available at the moment</p>
+                        <p>Try again later...</p>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <!-- Контейнер, в котором расположен логотип и навигационные ссылки по сайту -->
+                <div class="footer-nav-container">
+                    <div class="footer-logo">
+                        <a href="../../index.html"><img src="../../images/special/logo-footer.svg" alt="our logo"></a>
+                    </div>
+                    <div class="footer-nav">
+                        <div>
+                            <p>Our team</p>
+                            <a href="about-us.html">About us</a>
+                            <a href="about-us.html">Team</a>
+                            <a href="what-we-do.html">What we do</a>
+                            <a href="contact-us.html">Contact</a>
+                        </div>
+                        <div>
+                            <p>More</p>
+                            <a href="#">Projects</a>
+                            <a href="#">Events</a>
+                            <a href="#">Donate</a>
+                            <a href="blog.html">Blog</a>
+                        </div>
+                        <div>
+                            <p>Connect</p>
+                            <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+                            <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                            <a href="https://twitter.com/" target="_blank">Twitter</a>
+                            <a href="https://ru.linkedin.com/" target="_blank">Linkdin </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Контейнер, в котором расположена форма подписки на электронную рассылку -->
+                <div class="footer-mail">
+                    <h2>Subscribe to get latest updates</h2>
+                    <form action="#">
+                        <input type="email" name="sub" placeholder="Your email">
+                        <button type="submit" value="Submit">Subscribe</button>
+                    </form>
+                </div>
+            </footer>
+        </div>
+        <!-- Подключение JS -->
+        <script src="../../JavaScript/burger-menu.js"></script>
+    </body>
+</html>
