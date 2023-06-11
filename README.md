@@ -1,2 +1,3 @@
 # Finsweet
-A training project to practice adaptive layout. At that time I had no knowledge in JS and didn't know about BEM methodology
+A training project to practice adaptive layout. This work is quite old - in those days I did not yet know JS and BEM.
+My most current work is MoviMate (look for it in my profile).
